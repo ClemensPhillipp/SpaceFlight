@@ -37,7 +37,7 @@ void motor_forward() {
   digitalWrite(IN2, LOW);
   for (int i = 0; i <= speed; i += 1) {
     analogWrite(GSM1, i);
-    delay(15);
+    delay(80);
   }
 }
 
@@ -46,7 +46,7 @@ void motor_stop() {
   digitalWrite(IN2, LOW);
   for (int i = speed; i >= 0; i -= 1) {
     analogWrite(GSM1, i);
-    delay(15);
+    delay(80);
   }
 }
 
